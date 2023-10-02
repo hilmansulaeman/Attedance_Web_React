@@ -1,25 +1,21 @@
-import React from 'react';
-import './App.css';
-// import { Sidebar } from "./component/Sidebar";
-import Sidebar from './component/Sidebar';
-import { Dashboard } from './component/Dashboard';
-import { Outlet } from 'react-router-dom';
-import { Button } from './component/Button';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Layout from './component/shared/Layout'
+import Register from './pages/Register'
+import Dashboard from './pages/Dashboard'
+import Products from './pages/Products'
 
-const App = () => {
-  return (
-    <div className='flex'>
-      <div className='basis-[15%] h-[120vh]'>
-        <Sidebar />
-      </div>
-      <div className='basis-[85%] border'>
-        <Dashboard />
-        <div>
-        <Outlet> </Outlet>
-      </div>
-      </div>
-    </div>
-  )
+function App() {
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<Layout />}>
+                    <Route index element={<Dashboard />} />
+                    <Route path="products" element={<Products />} />
+                </Route>
+                <Route path="/register" component={Register} />
+            </Routes>
+        </Router>
+    )
 }
 
 export default App
