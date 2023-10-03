@@ -73,7 +73,7 @@ export default function Products() {
             <div className="overflow-x-auto">
                 <table className="w-full text-left table-auto">
                 <thead>
-                    <tr className="bg-gray-100">
+					<tr className="bg-[#AAE2EB] ">
                     <th className="px-4 py-2">ID</th>
                     <th className="px-4 py-2">Product ID</th>
                     <th className="px-4 py-2">Nama Karyawan</th>

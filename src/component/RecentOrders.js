@@ -10,7 +10,7 @@ const recentOrderData = [
 		karyawan_id: '23143',
 		karyawan_name: 'Shirley A. Lape',
 		jam_masuk: '2022-05-17T09:00:00',
-		jam_keluar: '2022-05-17T09:00:00',
+		jam_keluar: '2022-05-17T17:00:00',
 		current_order_status: 'PLACED',
 		shipment_address: 'Cottage Grove, OR 97424'
 	},
@@ -20,7 +20,7 @@ const recentOrderData = [
 		karyawan_id: '96453',
 		karyawan_name: 'Ryan Carroll',
 		jam_masuk: '2022-05-17T09:00:00',
-		jam_keluar: '2022-05-17T09:00:00',
+		jam_keluar: '2022-05-17T17:00:00',
 		current_order_status: 'CONFIRMED',
 		shipment_address: 'Los Angeles, CA 90017'
 	},
@@ -30,7 +30,7 @@ const recentOrderData = [
 		karyawan_id: '65345',
 		karyawan_name: 'Mason Nash',
 		jam_masuk: '2022-05-17T09:00:00',
-		jam_keluar: '2022-05-17T09:00:00',
+		jam_keluar: '2022-05-17T17:00:00',
 		current_order_status: 'SHIPPED',
 		shipment_address: 'Westminster, CA 92683'
 	},
@@ -40,7 +40,7 @@ const recentOrderData = [
 		karyawan_id: '87832',
 		karyawan_name: 'Luke Parkin',
 		jam_masuk: '2022-05-17T09:00:00',
-		jam_keluar: '2022-05-17T09:00:00',
+		jam_keluar: '2022-05-17T17:00:00',
 		current_order_status: 'SHIPPED',
 		shipment_address: 'San Mateo, CA 94403'
 	},
@@ -50,7 +50,7 @@ const recentOrderData = [
 		karyawan_id: '09832',
 		karyawan_name: 'Anthony Fry',
 		jam_masuk: '2022-05-17T09:00:00',
-		jam_keluar: '2022-05-17T09:00:00',
+		jam_keluar: '2022-05-17T17:00:00',
 		current_order_status: 'OUT_FOR_DELIVERY',
 		shipment_address: 'San Mateo, CA 94403'
 	},
@@ -60,7 +60,7 @@ const recentOrderData = [
 		karyawan_id: '97632',
 		karyawan_name: 'Ryan Carroll',
 		jam_masuk: '2022-05-17T09:00:00',
-		jam_keluar: '2022-05-17T09:00:00',
+		jam_keluar: '2022-05-17T17:00:00',
 		current_order_status: 'DELIVERED',
 		shipment_address: 'Los Angeles, CA 90017'
 	}
@@ -73,7 +73,7 @@ export default function RecentOrders() {
             <div className="overflow-x-auto">
                 <table className="w-full text-left table-auto">
                 <thead>
-                    <tr className="bg-gray-100">
+                    <tr className="bg-[#AAE2EB] ">
                     <th className="px-4 py-2">ID</th>
                     <th className="px-4 py-2">Product ID</th>
                     <th className="px-4 py-2">Nama Karyawan</th>
